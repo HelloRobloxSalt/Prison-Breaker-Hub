@@ -1,7 +1,7 @@
 --This is not so op just the tiger admin is also i don't own any of these scripts i just put it all into a gui
  
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua'))()
-local Window = Library.CreateLib("Prison Breaker Hub", "BloodTheme")
+local Window = Library.CreateLib("Prison Breaker Hub V1", "BloodTheme")
  
 -- main
 local PrisonBreaker = Window:NewTab("Prison Breaker")
