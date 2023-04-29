@@ -1,0 +1,61 @@
+--This is not so op just the tiger admin is also i don't own any of these scripts i just put it all into a gui
+ 
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua'))()
+local Window = Library.CreateLib("Prison Breaker Hub", "BloodTheme")
+ 
+-- main
+local PrisonBreaker = Window:NewTab("Prison Breaker")
+local PrisonBreakerSection = PrisonBreaker:NewSection("Prison Breaker")
+ 
+ 
+PrisonBreakerSection:NewButton("Prison admin", "admin script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/H17S32/Tiger_Admin/main/Script'))()
+end)
+ 
+PrisonBreakerSection:NewButton("Prison Gui", "Gui script", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/mHfK0Xk4'))()
+end)
+ 
+local Admin = Window:NewTab("Admin")
+local AdminSection = Admin:NewSection("Admin")
+ 
+ 
+AdminSection:NewButton("infinite yield", "fe admin script", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/4VnxtS5G'))()
+end)
+ 
+local Player = Window:NewTab("Player")
+local PlayerSection = Player:NewSection("Player")
+ 
+ 
+PlayerSection:NewSlider("WalkSpeed", "Set Custom Jump Power!", 600, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+ 
+PlayerSection:NewSlider("JumpPower", "Set Custom Walk Speed!", 600, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+ 
+PlayerSection:NewButton("Rest WS&JP", "Rest them with a button!", function()
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+ 
+PlayerSection:NewToggle("Super-Human", "Run fast no cutsom Also jump high", function(state)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 102
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 150
+else
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+ 
+local Other = Window:NewTab("Other")
+local OtherSection = Player:NewSection("Other")
+ 
+OtherSection:NewButton("Fly", "Fly around the map!", function()
+    loadstring(game:HttpGet('https://scriptblox.com/raw/Universal-Script-FLY-GUI-V3-8402'))()
+end)
+ 
+OtherSection:NewButton("Chathax", "Be anybody!", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/MBpnp3yS'))()
+end)
