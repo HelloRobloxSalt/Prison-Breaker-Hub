@@ -1,38 +1,38 @@
---This is not so op just the tiger admin is also i don't own any of these scripts i just put it all into a gui
- 
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua'))()
-local Window = Library.CreateLib("Prison Breaker Hub V1", "BloodTheme")
- 
--- main
-local PrisonBreaker = Window:NewTab("Prison Breaker")
-local PrisonBreakerSection = PrisonBreaker:NewSection("Prison Breaker")
- 
- 
-PrisonBreakerSection:NewButton("Prison admin", "admin script", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/H17S32/Tiger_Admin/main/Script'))()
+--Script currently patched I will make another V1 soon. Here is script if you wanna try launching it.
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Prison Breaker V3", "Synapse")
+
+
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
+
+MainSection:NewButton("Tiger Admin", "OP Prison Life Admin", function()
+    loadstring(game:HttpGet('https://scriptblox.com/raw/Prison-Life-Tiger-Admin-Gui-10597'))()
 end)
- 
-PrisonBreakerSection:NewButton("Prison Gui", "Gui script", function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/mHfK0Xk4'))()
+
+MainSection:NewButton("Aliafanboys gui", "Its alright", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/Jk8dDSXw'))()
 end)
- 
-local Admin = Window:NewTab("Admin")
-local AdminSection = Admin:NewSection("Admin")
- 
- 
-AdminSection:NewButton("infinite yield", "fe admin script", function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/4VnxtS5G'))()
-end)
- 
+
+
 local Player = Window:NewTab("Player")
 local PlayerSection = Player:NewSection("Player")
- 
- 
-PlayerSection:NewSlider("WalkSpeed", "Set Custom Jump Power!", 600, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+
+PlayerSection:NewToggle("Super-Human", "Go fast and jump high.", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 200
+    else
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    end
+end)
+
+PlayerSection:NewSlider("WalkSpeed", "Set Custom Walkspeed!", 400, 16, function(s)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
  
-PlayerSection:NewSlider("JumpPower", "Set Custom Walk Speed!", 600, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+PlayerSection:NewSlider("JumpPower", "Set Custom Jump Power!", 453, 50, function(s)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
  
@@ -40,22 +40,27 @@ PlayerSection:NewButton("Rest WS&JP", "Rest them with a button!", function()
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
 end)
- 
-PlayerSection:NewToggle("Super-Human", "Run fast no cutsom Also jump high", function(state)
-    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 102
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 150
-else
-    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
-end)
- 
-local Other = Window:NewTab("Other")
-local OtherSection = Player:NewSection("Other")
- 
-OtherSection:NewButton("Fly", "Fly around the map!", function()
+
+PlayerSection:NewButton("Fly GUI Mobile", "Fly around the map!", function()
     loadstring(game:HttpGet('https://scriptblox.com/raw/Universal-Script-FLY-GUI-V3-8402'))()
 end)
- 
-OtherSection:NewButton("Chathax", "Be anybody!", function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/MBpnp3yS'))()
+
+PlayerSection:NewButton("Fly GUI PC", "Fly around the map!", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/C5qp7YeG'))()
 end)
+
+PlayerSection:NewButton("Inf Jump GUI", "Jump with no limt!", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/ZsGXfxQZ'))()
+end)
+
+
+local Other = Window:NewTab("Other")
+local OtherSection = Other:NewSection("Other")
+
+OtherSection:NewButton("Infinite Yield", "FE Admin Commands", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+OtherSection:NewButton("Chathax", "Be anybody!", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/BT1uban5'))()
+end) 
