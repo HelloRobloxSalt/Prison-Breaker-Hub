@@ -1,0 +1,66 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Prison Breaker Hub V4", "Midnight")
+
+local Tab = Window:NewTab("Main")
+local TabSection = Tab:NewSection("Main")
+
+TabSection:NewButton("Tiger Admin", "OP Prison Life Admin", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/H17S32/Tiger_Admin/main/Script')()
+end)
+
+TabSection:NewButton("Infinite Yield", "FE Admin Commands", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source')()
+end)
+
+TabSection:NewButton("Tase All", "Tase All", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/KhvjktG4')()
+end)
+
+TabSection:NewButton("Aimbot", "Prison Life Aimbot", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/uFr4cmHF')()
+end)
+
+local Hi = Window:NewTab("Player")
+local HiSection = Hi:NewSection("Player")
+
+HiSection:NewToggle("Super-Human", "Go fast and jump high.", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 201
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 250
+    else
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    end
+end)
+
+HiSection:NewSlider("WalkSpeed", "Set Custom Walkspeed!", 400, 16, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+ 
+HiSection:NewSlider("JumpPower", "Set Custom Jump Power!", 453, 50, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+ 
+HiSection:NewButton("Rest WS&JP", "Rest them with a button!", function()
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+HiSection:NewButton("Fly GUI Mobile", "Fly around the map!", function()
+    loadstring(game:HttpGet('https://scriptblox.com/raw/Universal-Script-FLY-GUI-V3-8402'))()
+end)
+
+HiSection:NewButton("Fly GUI PC", "Fly around the map!", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/C5qp7YeG'))()
+end)
+
+HiSection:NewButton("Inf Jump GUI", "Jump with no limt!", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/ZsGXfxQZ'))()
+end)
+
+local Other = Window:NewTab("FPS")
+local OtherSection = Other:NewSection("FPS Unlocker!")
+
+OtherSection:NewButton("FPS unlocker", "Unlock FPS!", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/Pnx4PcXS'))()
+end)
