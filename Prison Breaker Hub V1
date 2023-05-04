@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Prison Hub V1", "Ocean")
+local Window = Library.CreateLib("Prison Breaker Hub V1", "BloodTheme")
 
 local Main = Window:NewTab("Main")
 local OpenSection = Main:NewSection("Main")
