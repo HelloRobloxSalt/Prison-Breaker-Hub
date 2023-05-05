@@ -72,6 +72,7 @@ local ThanksSection = Thanks:NewSection("Thanks to")
 
 ThanksSection:NewLabel("Thanks daslol#6258!")
 
-NoteSection:NewLabel("Some things may be patched.")
-NoteSection:NewLabel("Dont skid me")
-NoteSection:NewLabel("im da biggest bird!")
+MainSection:NewLabel("Some things may be patched.")
+MainSection:NewLabel("Dont skid me")
+MainSection:NewLabel("im da biggest bird!")
+MainSection:NewLabel("this is not being updated after.")
