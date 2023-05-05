@@ -1,2 +1,1 @@
-never Gona give u up
-Never Gona let you down
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
