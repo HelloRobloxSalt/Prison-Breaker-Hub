@@ -72,9 +72,6 @@ local ThanksSection = Thanks:NewSection("Thanks to")
 
 ThanksSection:NewLabel("Thanks daslol#6258!")
 
-local Note = Window:NewTab("Note")
-local NoteSection = Main:NewSection("Below")
-
 NoteSection:NewLabel("Some things may be patched.")
 NoteSection:NewLabel("Dont skid me")
 NoteSection:NewLabel("im da biggest bird!")
