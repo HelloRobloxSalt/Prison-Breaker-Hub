@@ -6,7 +6,7 @@ notifSound.Volume = 0.15
 notifSound.SoundId = "rbxassetid://2482356144"
 notifSound.PlayOnRemove = true
 notifSound:Destroy()
-game.StarterGui:SetCore("SendNotification", {Title = "Loaded", Text = "prison breaker hub V5 loaded successfully!", Icon = "rbxassetid://11457672278", Duration = 5, Button1 = "ok lemme use"})
+game.StarterGui:SetCore("SendNotification", {Title = "Loaded", Text = "prison breaker hub V4 loaded successfully!", Icon = "rbxassetid://11457672278", Duration = 5, Button1 = "ok lemme use"})
 
 wait(2)
 
