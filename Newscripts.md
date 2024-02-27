@@ -1,6 +1,6 @@
 
 Pro  now released! 
 
-Use it at bottom!
+Try it!
 
 
